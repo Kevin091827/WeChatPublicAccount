@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevin.wxservice.mapper.UnionIdMapper">
+
+    <insert id="insertUnionId" parameterType="com.kevin.wxservice.entity.User">
+        insert into user_table(nickName,unionId,openId,gmt_creat,gmt_modify)
+                          values(
+                          #{user.nickName} ,
+                          #{user.unionId} ,
+                          #{user.openId} ,
+                          #{user.gmt_creat} ,
+                          #{user.gmt_modify}
+                          )
+    </insert>
+
+    <select id="selectUnionId" resultType="java.lang.String">
+        select unionId  from user_table where openId = #{openid}
+    </select>
+
+    <delete id="deleteUnionid" parameterType="java.lang.String">
+        delete from user_table where openId = #{openid}
+    </delete>
+</mapper>
