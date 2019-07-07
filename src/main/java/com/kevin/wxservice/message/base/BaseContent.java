@@ -10,6 +10,4 @@ package com.kevin.wxservice.message.base;
  * @Version: 1.0
  */
 public class BaseContent {
-
-
 }

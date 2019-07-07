@@ -79,7 +79,7 @@ public class WxAccountServiceImpl implements WxAccountService {
      * 获取accessToken
      * @return
      */
-    private static String getAccessToken() {
+    public static String getAccessToken() {
         if(accessToken==null||accessToken.isExpired()) {
             initAccessToken();
         }
