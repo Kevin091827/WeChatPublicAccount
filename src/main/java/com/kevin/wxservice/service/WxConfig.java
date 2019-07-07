@@ -41,5 +41,6 @@ public interface WxConfig {
     //小程序url
     String MINIPROGRAM_URL = "";
 
-
+    //微信模板消息接口地址
+    String TEMPLATEMESSAGE_URL = "https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=ACCESS_TOKEN";
 }
