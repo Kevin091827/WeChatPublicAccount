@@ -21,7 +21,7 @@ public interface WxConfig {
     final String GRANT_TYPE = "client_credential";
 
     // appid	第三方用户唯一凭证
-    final String APPID = "wx0fb8d03558f8cc54";
+    final String APPID = "";
 
     // secret	第三方用户唯一凭证密钥，即appsecret
     final String SECRET = "6750104aff906af01cb0f1fe4c09de14";
